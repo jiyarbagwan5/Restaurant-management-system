@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant Management System</h1>
+        <p class="slogan">Delicious Food, Exceptional Service</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Our Restaurant</h2>
+        <p>Experience the finest dining with our exquisite menu.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <h3>Dish 1</h3>
+            <p>Burger</p>
+            <p class="price">$10.99</p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Dish 2</h3>
+            <p>Pizza</p>
+            <p class="price">$12.99</p>
+        </div>
+
+        <div class="menu-item">
+          <h3>Dish 3</h3>
+          <p>Veg Thali</p>
+          <p class="price">$10.99</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Dish 4</h3>
+        <p>Nonveg Thali</p>
+        <p class="price">$20.99</p>
+    </div>
+    <div class="menu-item">
+      <h3>Dish 5</h3>
+      <p>Anything you would like to eat</p>
+      <p class="price">According to food you've order</p>
+  </div>
+    </section>
+
+    <section id="reservations">
+        <h2>Reservations</h2>
+        <p>Book your table now for an unforgettable dining experience.</p>
+        <form action="#" method="post" id="reservation-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <br><br>
+          <label for="date">Reservation Date:</label>
+          <input type="date" id="date" name="date" required>
+          <br><br>
+          <label for="time">Reservation Time:</label>
+          <input type="time" id="time" name="time" required>
+          <br><br>
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" required>
+          <br><br>
+          <button type="submit">Submit Reservation</button>
+      </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-carousel">
+          <div><img src="image1.jpg" alt="Image 1"></div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+          <blockquote>
+              "Amazing food and excellent service! The atmosphere is cozy, and I always look forward to dining here."
+          </blockquote>
+          <p class="customer">- John Doe</p>
+      </div>
+  
+      <div class="testimonial">
+          <blockquote>
+              "The menu offers a great variety, and the staff is friendly. I highly recommend this restaurant."
+          </blockquote>
+          <p class="customer">- Jane Smith</p>
+      </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Discover our story, mission, and commitment to quality.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>&copy; 2024 Restaurant Management System. All rights reserved.</p>
+    </section>
+</body>
+
+</html>
