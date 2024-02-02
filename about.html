@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 300px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container label, .container input {
+            margin-bottom: 10px;
+        }
+
+        .container input[type="button"] {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .container input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="button" value="Login" onclick="attemptLogin()">
+            <p>Not registered? <a href="#" onclick="showRegistrationForm()">Register here</a></p>
+        </form>
+    </div>
+
+    <div class="container" id="registrationContainer" style="display: none;">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <input type="button" value="Register" onclick="attemptRegistration()">
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
+        </form>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
